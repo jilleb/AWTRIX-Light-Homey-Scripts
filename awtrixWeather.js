@@ -1,5 +1,8 @@
 // awTrixWeather.js - Creates custom weather apps on the AWTrix Light / Ulanzi matrix
-// Made by Jille, inspired by https://github.com/jeeftor/HomeAssistant 
+// Made by Jille, inspired by https://github.com/jeeftor/HomeAssistant
+// Requirements:
+// - OpenWeather Homey app configured to show today's forecast and current weather. 
+// - Icons for each of the defined weather types
 // Global settings and configuration
 // Device URI's for each of the devices you need in this script:
 // OpenWeather Today's weather:
