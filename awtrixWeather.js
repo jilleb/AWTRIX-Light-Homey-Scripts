@@ -6,9 +6,9 @@
 // Global settings and configuration
 // Device URI's for each of the devices you need in this script:
 // OpenWeather Today's weather:
-const uriOpenWeatherToday   = '86ecb891-214b-49b9-a4b3-f9fb47b42635';
+const uriOpenWeatherToday   = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
 // OpenWeather current weather:
-const uriOpenWeatherCurrent = 'd702ccb4-deb6-4c32-b03f-2e5ff0a640f5';
+const uriOpenWeatherCurrent = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
 
 // IP for the AwTrix light / Ulanzi matrix:
 const awtrixIP = '192.168.1.14';
