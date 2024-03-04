@@ -236,18 +236,3 @@ const createCustomAppFromSources = async () => {
 
 // Trigger the custom app creation logic
 createCustomAppFromSources();
-
-
-
-
-/*
-// Get the value for different capabilities
-getCapabilityValue(deviceId, 'conditioncode');
-getCapabilityValue(deviceId, 'measure_wind_direction_string');
-getCapabilityValue(deviceId, 'sunrise');
-getCapabilityValue(deviceId, 'sunset');
-getCapabilityValue(deviceId, 'measure_rain');
-getCapabilityValue(deviceId, 'measure_pop');
-getCapabilityValue(deviceId, 'measure_humidity');
-getCapabilityValue(deviceId, 'measure_wind_strength');
-*/
