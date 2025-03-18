@@ -9,9 +9,8 @@
 const uriOpenWeatherToday   = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
 // OpenWeather current weather:
 const uriOpenWeatherCurrent = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
-
-// IP for the AwTrix light / Ulanzi matrix:
-const awtrixIP = '192.168.1.14';
+// AW Trix ID, needed to get the current IP of the AwTrix light / Ulanzi matrix
+const uriAwTrix = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
 
 // Turn specific Apps on or off:
 // Set to true to enable, false to disable
@@ -182,11 +181,11 @@ const createCustomAppFromSources = async () => {
     const weatherSunrise = await getCapabilityValue(deviceId, 'sunrise');
     const weatherSunset = await getCapabilityValue(deviceId, 'sunset');
 
-
     deviceId = uriOpenWeatherCurrent;
     const weatherCurrentTemp = await getCapabilityValue(deviceId, 'measure_temperature');
     const weatherCurrentCondtion = await getCapabilityValue(deviceId, 'conditioncode');
 
+    const awtrixIP = await getCapabilityValue(uriAwTrix, 'ip');
 
     if (ENABLE_MOON_APP) {
       createCustomApp("moon", getMoonPhaseIcon(moonPhaseType), ` `, false);
