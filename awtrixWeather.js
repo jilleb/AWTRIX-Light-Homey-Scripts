@@ -78,6 +78,9 @@ const createCustomApp = async (name, icon, text, overlay) => {
   // Log the body of the message to the console
   console.log('Creating AWTrix app "%s" with the following properties:\n', name, body);
 
+  const awtrixIP = await getCapabilityValue(uriAwTrix, 'ip');
+
+
   // Call the flow card action
   await Homey.flow.runFlowCardAction({
     uri: 'homey:manager:logic',
@@ -184,8 +187,6 @@ const createCustomAppFromSources = async () => {
     deviceId = uriOpenWeatherCurrent;
     const weatherCurrentTemp = await getCapabilityValue(deviceId, 'measure_temperature');
     const weatherCurrentCondtion = await getCapabilityValue(deviceId, 'conditioncode');
-
-    const awtrixIP = await getCapabilityValue(uriAwTrix, 'ip');
 
     if (ENABLE_MOON_APP) {
       createCustomApp("moon", getMoonPhaseIcon(moonPhaseType), ` `, false);
